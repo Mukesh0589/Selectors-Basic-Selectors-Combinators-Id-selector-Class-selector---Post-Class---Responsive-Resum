@@ -1,142 +1,112 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main class="main-content" contenteditable="true">
+      <section class="left-section">
+        <div class="left-content">
+          <div class="profile-details">
+            <div class="profile">_</div>
+            <img
+              class="profile-image"
+              src="https://media-exp1.licdn.com/dms/image/C5603AQEa2gkVbsPp2A/profile-displayphoto-shrink_100_100/0/1596531979495?e=2147483647&v=beta&t=rT0HMqJ0nDEwrvLglOTKxjXKtt-djzTcgRw1-Vl9diY"
+              alt="profile"
+            />
+            <h2 class="name">Mukesh Kamble</h2>
+            <h4 class="designation">Web Developer</h4>
+            <hr />
+            <p class="description">Full stack Developer</p>
+           
+            <div class="contact-item">
+
+                    <div class="icon">
+                       <a href="https://www.linkedin.com/feed/" target="_blank">
+                           <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                       </a>
+                
+                       <a href="https://github.com/Mukesh0589"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+                      
+                    </div>
+                    <div class="contact">
+
+                                <span><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp; kamblemukesh628@gmail.com</span><br>
+                               <span><i class="fa fa-camera-retro fa-lg"></i> &nbsp;  8454820329</span>
+                    </div>
+                   
+                </div>
+                <div class="skills">skills</div>
+
+                <div class="skill-name">
+
+                    <div class="">HTML</div>
+                    <div class="progress-bar bar-1"></div>
+                    <div class="">CSS</div>
+                    <div class="progress-bar bar-2"></div>
+                    <div class="">JAVA</div>
+                    <div class="progress-bar bar-3"></div>
+                </div>
+                
+            </div>
+           
+        
+        </div>
     
-}
+    </section>
 
-/* Write CSS code below */
+<!-- Write code for the right section here -->
 
-.main-content {
-   
-    display: grid;
-    max-height: 100vh;
-    min-height: 1000px;
-    grid-template-columns: 300px 700px;
-}
+    <section class="right-section"> 
+        <div class="right-main-content">
 
-.left-section {
-    background-color: black;
-    color: aliceblue;
-    grid-column: 1 span;
-  /*  grid-column-start: 1;
-    grid-column-end: 2;  */
-}
+            <div class="about-me">
+                <h1 class="right-title">ABOUT ME</h1>
+                Aspiring full stack web developer with keen interest in web technologies and frameworks
+                with knowledge of data strutures and alogorithms.
+            
+            </div>
 
-.right-section {
-    background-color: whitesmoke;
-    width: 90%;
-    grid-column: span 1 / span 2;
-    
- /*   grid-column-start: 2;
-    grid-column-end: 3;  */
-}
+            <div class="education">
+                <h1 class="right-title">Education</h1>
+                Bachelor of Engineering - 2018
+                <br>
+                Electronics Engineering
+            </div>
 
-.left-content {
-    padding: 1rem;
-}
+            <div class="experience">
+              <h1 class="right-title">Experience</h1>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+               officia aspernatur culpa nobis magnam animi assumenda aut veniam voluptates. 
+              Provident alias harum dolore cumque vitae animi accusamus, officia expedita accusantium.
+            
+             </div>
 
-.profile-image img {
-    display: block;
-    margin: auto;
-    border: 5px white solid;
-    border-radius: 30%;
-    width: 30%;
-}
-
-.name {
-    font-size: 1.2rem;
-    font-weight:700;
-    text-align: center;
-    padding: 0.8rem;
-    text-transform: uppercase;
-    word-spacing:0.02px;
-    letter-spacing: 0.02px;
-}
-
-.designation {
-    font-size: 1rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom:0.5rem;
-    color: skyblue;
-
-}
-
-.description {
-    font-size: 0.75rem;
-    text-align: center;
-    padding: 1rem;
-}
-
-.icon a img {
-    
-    border-radius: 10px;
-    width: 30px;
-    height: 30px;
-    align-content: center;
-}
-
-.contact span i {
-    width: 10px;
-    text-align: center;
-}
-
-.skills {
-    font-size: 0.75rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1rem 0.5rem;
-}
-
-.skill-name {
-    font-size: 0.65rem;
-    font-weight: 0.65rem;
-    text-align: left;
-    padding-bottom: 0.5rem;
-}
-
-.progress-bar {
-border: 1px white solid;
-height: 4px;
-background-color: white;
-}
-
-.bar-1 {
-    width: 90%;
-}
-
-.bar-2 {
-    width: 75%;
-}
-
-.bar-3 {
-    width: 60%;
-}
-
-/*  Write code for the right section here */
-
-.right-main-content {
-    padding: 2rem 3rem;
-
-}
-
-.right-title {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 00.5rem;
-    letter-spacing: 1px;
-}
-
-/* Make the Resume Responsive using Media queries */
-
-@media (max-width: 673px) {
-    .main-content {
-        grid-template-columns: repeat(1 , 1fr);
-        width: 90%;
-        min-height: 1000px;
-    } 
-}
+             <div class="projects">
+                <h1 class="right-title">projects</h1>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                 officia aspernatur culpa nobis magnam animi assumenda aut veniam voluptates. 
+                Provident alias harum dolore cumque vitae animi accusamus, officia expedita accusantium.
+              
+               </div>
+    </section>
+</main>
+</body>
+</html> 
