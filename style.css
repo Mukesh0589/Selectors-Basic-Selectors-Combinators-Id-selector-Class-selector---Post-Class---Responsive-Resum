@@ -41,20 +41,21 @@
 }
 
 .name {
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  word-spacing: 0.02px;
-  letter-spacing: 0.2px;
-  padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight:700;
+    text-align: center;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    word-spacing:0.02px;
+    letter-spacing: 0.02px;
 }
 
 .designation {
-  font-size: 0.75rem;
-  text-align: center;
-  padding: 1rem;
-}
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom:0.5rem;
+    color: skyblue;
 
 .description {
   font-size: 0.75rem;
